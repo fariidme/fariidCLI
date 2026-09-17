@@ -1,0 +1,38 @@
+{
+  "title": "Security Assessment — example.com",
+  "target": "example.com",
+  "scope": "example.com",
+  "mode": "active",
+  "summary": "Assessment of example.com completed using nmap. 2 finding(s) recorded.",
+  "tools": ["nmap"],
+  "findings": [
+    {
+      "title": "Open port 80/tcp (http)",
+      "severity": "info",
+      "target": "192.0.2.10",
+      "service": "http",
+      "evidence": "80/tcp open — nginx 1.18",
+      "description": "Service http is exposed on port 80.",
+      "impact": "",
+      "remediation": "Restrict access via firewall if the service is not required.",
+      "references": []
+    },
+    {
+      "title": "Open port 443/tcp (https)",
+      "severity": "info",
+      "target": "192.0.2.10",
+      "service": "https",
+      "evidence": "443/tcp open — nginx 1.18",
+      "description": "Service https is exposed on port 443.",
+      "impact": "",
+      "remediation": "Restrict access via firewall if the service is not required.",
+      "references": []
+    }
+  ],
+  "timeline": [
+    {"time": "2026-09-17T00:00:00+00:00", "action": "nmap scan of example.com"}
+  ],
+  "raw_results": {},
+  "generated_at": "2026-09-17T00:00:00+00:00",
+  "finding_summary": {"info": 2}
+}

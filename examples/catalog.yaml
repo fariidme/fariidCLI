@@ -1,0 +1,25 @@
+# Example: user-defined tool catalog overrides.
+#
+# Fariid Sec ships a built-in catalog (fariid_sec/tools/catalog.py). You can
+# extend or override it for custom tools by supplying your own catalog to
+# ToolRegistry in a script, or by contributing entries upstream.
+#
+# Each entry: name, binary, category, risk, description, install_hint.
+
+nmap:
+  binary: nmap
+  category: network
+  risk: low
+  description: Network mapper (port scanning, service detection, NSE).
+
+nuclei:
+  binary: nuclei
+  category: vulnerability
+  risk: medium
+  description: Template-based vulnerability scanner.
+
+sqlmap:
+  binary: sqlmap
+  category: web
+  risk: high
+  description: Automatic SQL injection detection.
