@@ -5,7 +5,7 @@ Thanks for contributing to Fariid Tech Security AI.
 ## Getting started
 
 ```bash
-git clone https://github.com/FariidTech/fariid-security-ai.git
+git clone https://github.com/Fariidme/fariid-security-ai.git
 cd fariid-security-ai
 python3 -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"
